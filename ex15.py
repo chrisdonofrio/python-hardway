@@ -23,6 +23,10 @@ txt_again = open(file_again)
 #Once again, use read function to return string containing all characters in the file
 print txt_again.readlines()
 
+#Close files
+txt.close()
+txt_again.close()
+
 #Study Drills:
 #1. Commenting above each piece of code. Getting the hang of describing what my code actually does.
 #2. Get the hang of using Google. For instance, searching "Python [name of function]" will often return 
@@ -36,3 +40,23 @@ print txt_again.readlines()
 #readlines(9) seemed to print the contents of the entire file with \n to signify line breaks
 #OK. tried both functions again without number arguments.
 #readline() reads only the first line and readlines() reads all lines and splits them by line delimiter
+#7. Practice using Python from the Shell
+#8. Close files
+
+#### BETTER WAY TO CLOSE (from stackoverflow) ####
+# A better idea would be to use the with statement to have Python close files for you automatically; file objects are context managers:
+
+# with open(filename) as txt:
+#   print "Here's your file %r:" % filename
+#   print txt.read()
+
+# print "Type the filename again:"
+# file_again = raw_input("> ")
+
+# with open(file_again) as txt_again:
+#   print txt_again.read()
+
+# The with statement tells the file object that a block begins (entering the context), 
+# and when the indented section ends the statement informs the file object the block has completed (exiting the context). 
+# A file object automatically closes itself at that point. 
+
