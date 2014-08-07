@@ -44,3 +44,9 @@ target.write('%r\n%r\n%r\n' % (line1, line2, line3))
 #Close the file
 print "And finally, we close it."
 target.close()
+
+### STUDY DRILL NOTES ###
+#4: 'w' parameter is passed to specifically write to a file. 'r' is passed for reading. 'a' is for append.
+#5: after reading the Python documentation on the open function,
+#using 'w+' as the mode will truncate the file, 
+#therefore target.truncate() is not needed.
