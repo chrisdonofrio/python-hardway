@@ -30,12 +30,16 @@ line3 = raw_input("line 3: ")
 print "I'm going to write these to the file."
 
 #Uses write function to write user input received in variables line1, line2, and line3
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+#target.write(line1)
+#target.write("\n")
+#target.write(line2)
+#target.write("\n")
+#target.write(line3)
+#target.write("\n")
+
+#Use write function to write user input received in variables line1, line2, 
+#and line3 but use one command instead of six
+target.write('%r\n%r\n%r\n' % (line1, line2, line3))
 
 #Close the file
 print "And finally, we close it."
