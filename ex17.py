@@ -25,3 +25,6 @@ in_file.close()
 
 #1:
 #2: See 'ex17-2.py'. I got it down to three lines! I think it's pythonic?
+#3: Read more about concatenating files.
+#4: cat > filename
+#5: out_file.closetext closes and saves the file.
