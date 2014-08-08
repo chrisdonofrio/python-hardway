@@ -22,3 +22,6 @@ print "Alright, all done."
 
 out_file.close()
 in_file.close()
+
+#1:
+#2: See 'ex17-2.py'. I got it down to three lines! I think it's pythonic?
